@@ -20,7 +20,7 @@ class Routers:
         output = sshCli.send_command(self.command,expect_string=r"\S+\s\>\s$")
         sshCli.disconnect()
 
-        with open(f'{self.host}-{datetime.now().strftime("%Y-%m-%d")}.txt', "w+") as file:
+        with open(f'{self.host}-{datetime.now().strftime("%Y-%m-%d")}.rsc', "w+") as file:
             file.writelines(output)
 
 
