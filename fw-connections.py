@@ -10,7 +10,7 @@ r = router.talk('/ip/firewall/connection/print\nwhere\norig-rate>0')
 #print(r)
 # Подготовка данных для InfluxDB
 #AKNET
-desired_src_addresses = ["212.112.116.233", "212.112.107.213", "212.112.116.231","212.112.116.236", "31.186.53.155", "31.186.53.149"]
+desired_src_addresses = ["212.112.116.233", "212.112.107.213", "212.112.116.231","212.112.116.236", "31.186.53.155", "31.186.53.149", "212.112.105.196", "212.112.105.90", "212.112.105.91"]
 src_ip_orig_rate_sum = {}
 src_ip_repl_rate_sum = {}
 dst_ip_orig_rate_sum = {}
